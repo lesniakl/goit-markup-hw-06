@@ -65,7 +65,7 @@
             EFEKTYWNE ROZWIĄZANIA<br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button data-modal-open class="order__btn" type="button">
+          <button data-modal-open class="btn btn--order" type="button">
             Zamów usługę
           </button>
           <div data-modal class="backdrop is-hidden">
@@ -75,6 +75,84 @@
                   <use href="./images/sprite.svg#btn-close"></use>
                 </svg>
               </button>
+              <h2 class="modal__h2">Zostaw swoje dane w formularzu poniżej</h2>
+
+              <form name="contact-form" class="modal__form">
+                <label for="client-name" class="modal__label">
+                  Imie
+                  <label class="modal__control">
+                    <svg class="modal__icon">
+                      <use href="./images/sprite.svg#icon-person"></use>
+                    </svg>
+                    <input
+                      type="text"
+                      name="client-name"
+                      id="client-name"
+                      class="modal__input"
+                    />
+                  </label>
+                </label>
+                <label for="client-phone" class="modal__label">
+                  Telefon
+                  <label class="modal__control">
+                    <svg class="modal__icon">
+                      <use href="./images/sprite.svg#icon-phone-black"></use>
+                    </svg>
+                    <input
+                      type="tel"
+                      name="client-phone"
+                      id="client-phone"
+                      class="modal__input"
+                    />
+                  </label>
+                </label>
+                <label for="client-email" class="modal__label">
+                  Email
+                  <label class="modal__control">
+                    <svg class="modal__icon">
+                      <use href="./images/sprite.svg#icon-email-black"></use>
+                    </svg>
+                    <input
+                      type="email"
+                      name="client-email"
+                      id="client-email"
+                      class="modal__input"
+                    />
+                  </label>
+                </label>
+                <label class="modal__label">
+                  Komentarz
+                  <textarea
+                    name="client-msg"
+                    class="modal__msg"
+                    placeholder="Wprowadź tekst"
+                    rows="7"
+                  ></textarea>
+                </label>
+                <div class="modal__terms">
+                  <div class="modal__checkbox-control">
+                    <input
+                      type="checkbox"
+                      name="client-agree"
+                      class="modal__checkbox-input"
+                      value="1"
+                      id="client-agree"
+                      required
+                    />
+                    <label for="client-agree" class="modal__checkbox-label">
+                      <svg class="modal__icon-check">
+                        <use href="./images/sprite.svg#icon-check"></use>
+                      </svg>
+                    </label>
+                  </div>
+                  <span
+                    >Oświadczam iż akceptuję
+                    <a href="./" target="_blank">Regulamin</a> i
+                    <a href="./" target="_blank">Politykę Prywatności.</a></span
+                  >
+                </div>
+                <button type="submit" class="btn btn--modal">Wyślij</button>
+              </form>
             </div>
           </div>
         </div>
@@ -476,7 +554,7 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__side">
+        <div class="footer__side footer__side--margin-right">
           <a href="./" class="footer__logo"
             >Web<span class="footer__studio">Studio</span></a
           >
@@ -496,7 +574,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__side">
+        <div class="footer__side footer__side--margin-right">
           <h3 class="footer__h3">Dołącz do nas</h3>
           <div class="socials">
             <a
@@ -540,6 +618,22 @@
               </svg>
             </a>
           </div>
+        </div>
+        <div class="footer__side footer__side--newsletter">
+          <h3 class="footer__h3">Zapisz się do newslettera</h3>
+          <form name="newsletter" class="newsletter">
+            <input
+              type="email"
+              class="newsletter__input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="btn newsletter__btn">
+              <span>Zapisz się</span>
+              <svg class="newsletter__icon">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

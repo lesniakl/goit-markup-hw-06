@@ -273,7 +273,7 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__side">
+        <div class="footer__side footer__side--margin-right">
           <a href="./" class="footer__logo"
             >Web<span class="footer__studio">Studio</span></a
           >
@@ -293,7 +293,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__side">
+        <div class="footer__side footer__side--margin-right">
           <h3 class="footer__h3">Dołącz do nas</h3>
           <div class="socials">
             <a
@@ -337,6 +337,22 @@
               </svg>
             </a>
           </div>
+        </div>
+        <div class="footer__side footer__side--newsletter">
+          <h3 class="footer__h3">Zapisz się do newslettera</h3>
+          <form name="newsletter" class="newsletter">
+            <input
+              type="email"
+              class="newsletter__input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="btn newsletter__btn">
+              <span>Zapisz się</span>
+              <svg class="newsletter__icon">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
